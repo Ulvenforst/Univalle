@@ -1,8 +1,6 @@
 Votación alcaldía versión 1.
 Grupo:
 Juan Camilo Narváez Tascón. 2140112-3743
-Carol Sofía Macarena Rubiano Valderrama. 2181025-3743
-Natan Gabriel Medina Corea. 2178208-3743
 
 1. Para usar el programa solo debe de ejecutarlo y seguir las instrucciones que le indica. 
 (Para visualizar demo mire https://www.youtube.com/watch?v=RACDoRak-M0)
