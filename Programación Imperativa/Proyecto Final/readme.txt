@@ -46,5 +46,3 @@ realizar acciones; se actualizó configurando sus valores en momentos oportunos.
 	Incluir imagenes de los candidatos,
 	Colores más llamativos.
 	Mejorar estructura visual.
-
-
