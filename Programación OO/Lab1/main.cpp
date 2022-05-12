@@ -8,7 +8,7 @@
 
 // Ejemplo con una clase y dos objetos.
 /** 
-Hacer una mudanza. Tenemos dos camiones y un conjunto de objetos a transportar, para hacer una mudanza. 
+HISTORIA: Hacer una mudanza. Tenemos dos camiones y un conjunto de objetos a transportar, para hacer una mudanza. 
   Cada objeto lo intentamos subir al primer camión, pero si no se puede lo llevamos al segundo camión; y si tampoco se puede, lo dejamos en tierra (no se puede transportar). Luego a cada camión le pedimos que haga la mudanza, que nos diga cuanto peso transportó y que descargue los objetos. 
   Estoy modelando un camión con una placa, que puede transportar una cierta carga en kilos, y que tiene una capacidad máxima en kilos. Se le puede pedir que me diga su placa, que cargue un objeto, que transporte toda la carga y que me diga cuánto transportó y que descargue todo.
 */
