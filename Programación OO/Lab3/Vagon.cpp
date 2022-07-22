@@ -2,7 +2,7 @@
   Archivo: Vagon.cpp
   Autor: Juan Camilo Narváez Tascón <juan.narvaez.tascon@correounivalle.edu.co>
   Fecha creación: 2022-16-07
-  Fecha última modificación: 2022-16-07
+  Fecha última modificación: 2022-21-07
   Licencia: GNU-GPL
 */
 
@@ -16,7 +16,7 @@ Vagon::Vagon(int numero_del_Vagon, bool transporte_de_enfermos)
 
 Vagon::~Vagon() 
 {
-  // No hay que hacer nada
+  // No hay que hacer nada.
 }
 
 bool Vagon::hay_pasajeros_enfermos() // Esta función no se usa de momento.
