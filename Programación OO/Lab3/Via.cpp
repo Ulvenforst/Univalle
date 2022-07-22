@@ -2,15 +2,11 @@
   Archivo: Via.cpp
   Autor: Juan Camilo Narváez Tascón <juan.narvaez.tascon@correounivalle.edu.co>
   Fecha creación: 2022-16-07
-  Fecha última modificación: 2022-16-07
+  Fecha última modificación: 2022-21-07
   Licencia: GNU-GPL
 */
 
 #include "Via.h"
-#include "Vagon.h"
-#include<vector>
-#include <iostream>
-
 
 Via::Via()
 {
@@ -19,7 +15,6 @@ Via::Via()
 
 Via::~Via() 
 {
-  // No hay que hacer nada.
   // std::cout <<"Entidad destruída" << std::endl;
   for (int contador_vagones; contador_vagones < tren.size(); contador_vagones++)
   {
