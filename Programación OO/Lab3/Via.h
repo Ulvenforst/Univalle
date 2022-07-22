@@ -2,7 +2,7 @@
   Archivo: Via.h
   Autor: Juan Camilo Narváez Tascón <juan.narvaez.tascon@correounivalle.edu.co>
   Fecha creación: 2022-16-07
-  Fecha última modificación: 2022-16-07
+  Fecha última modificación: 2022-21-07
   Licencia: GNU-GPL
 */
 
@@ -59,7 +59,6 @@ class Via
   Indica desde dónde ha de avanzar el vagón en una vía.
   */
   virtual void avanzarDesde(Via* via);
-
 };
 
 #else
