@@ -15,7 +15,6 @@
 #ifndef VAGON_H
 #define VAGON_H
 
-#include<string>
 using namespace std;
 
 class Vagon
@@ -26,11 +25,11 @@ class Vagon
 
   public:
   /**
-  Constructor. Da valores iniciales a los atributos internos
+  Constructor. Da valores iniciales a los atributos internos.
   */
   Vagon(int numero_del_Vagon, bool transporte_de_enfermos);
   /**
-  Destructor. No hace nada
+  Destructor. No hace nada.
   */
   virtual ~Vagon();
   /**
@@ -44,5 +43,5 @@ class Vagon
 };
 
 #else
-class Vagon; // Declaración adelantada
+class Vagon; // Declaración adelantada.
 #endif
