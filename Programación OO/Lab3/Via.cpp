@@ -16,7 +16,7 @@ Via::Via()
 Via::~Via() 
 {
   // std::cout <<"Entidad destruída" << std::endl;
-  for (int contador_vagones; contador_vagones < tren.size(); contador_vagones++)
+  for (int contador_vagones = 0; contador_vagones < tren.size(); contador_vagones++)
   {
     if (tren.at(contador_vagones) != nullptr)
     {
@@ -40,7 +40,7 @@ int Via::dimeCuantosVagonesHay()
 string Via::estadoActual()
 {
   string vagones_del_tren = "";
-  for (int contador_vagones; contador_vagones < tren.size(); contador_vagones++)
+  for (int contador_vagones = 0; contador_vagones < tren.size(); contador_vagones++)
   {
     vagones_del_tren += to_string(tren.at(contador_vagones)->numero_vagon()) + " ";
   }
