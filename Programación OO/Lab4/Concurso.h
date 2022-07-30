@@ -30,8 +30,6 @@
 #include "Concursante.h"
 #include <vector>
 #include <string>
-// RECUERDE ELIMINAR OISTREAM
-#include <iostream>
 using namespace std;
 
 class Concurso
