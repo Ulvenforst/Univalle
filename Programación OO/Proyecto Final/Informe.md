@@ -27,3 +27,15 @@ Una vez añadidos los personajes puede colocarlos en un lugar y asignar las regl
 Todo esto en el main.cpp
 <br><br>
 Los posibles estados de juego son:
+![image](https://user-images.githubusercontent.com/66099723/183516188-3a25ed70-d9ca-4c40-9a22-d26689e99397.png)
+<br>
+![image](https://user-images.githubusercontent.com/66099723/183516295-2580cedd-7532-43e4-978e-f3f55ae90f75.png)
+<br>
+![image](https://user-images.githubusercontent.com/66099723/183516390-f5e9e8dc-7a9d-4fdd-8079-ae3d1252fe78.png)
+<br>
+![image](https://user-images.githubusercontent.com/66099723/183516581-b8953f9a-0946-46a8-98c7-573e6650b801.png)
+<br><br>
+El programa es capaz de adaptarse a la cantidad de personajes que se desee con las reglas indicadas.
+<br>
+Tenga en la cuenta, que aunque los destructores fueron implementados, estos no fueron revisados con Valgrind,
+por lo que puede que hayan memery leaks.
