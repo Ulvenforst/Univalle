@@ -11,8 +11,8 @@ lechuga, el conejo se comerá la lechuga. El jugador debe controlar que órdenes
 lograr que el robot transporte los tres individuos a la otra orilla, sanos y salvos.
 <br>
 Las órdenes que puede dar el jugador son (usando el teclado):<br>
-<b>B<\b> la Barca se mueve a la otra orilla<br>
-<b>R<\b> el Robot salta de/a la barca<br>
-<b>Z<\b> el Zorro salta de/a la barca<br>
-<b>C<\b> el Conejo salta de/a la barca<br>
-<b>L<\b> la Lechuga salta de/a la barca<br>
+<b>B</b> la Barca se mueve a la otra orilla<br>
+<b>R</b> el Robot salta de/a la barca<br>
+<b>Z</b> el Zorro salta de/a la barca<br>
+<b>C</b> el Conejo salta de/a la barca<br>
+<b>L</b> la Lechuga salta de/a la barca<br>
