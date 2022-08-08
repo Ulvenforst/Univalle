@@ -1,7 +1,6 @@
 /*
   Archivo: Presentador.h
-  Autores: Juan Camilo Narváez Tascón, Carol Sofía Macarena Rubiano Valderrama.
-  Email: <juan.narvaez.tascon@correounivalle.edu.co>, <carol.rubiano@correounivalle.edu.co>
+  Autor: Juan Camilo Narváez Tascón <juan.narvaez.tascon@correounivalle.edu.co>
   Fecha creación: 2022-29-07
   Fecha última modificación: 2022-29-07
   Licencia: GNU-GPL
