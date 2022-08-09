@@ -50,19 +50,13 @@ void Jugador::jugar()
       {
         pintarInterfaz();
         if(posiciones[posicionDeMuerte]->motivoMuerte() == "")
-        {
-          cout << "Alguien fue devorado" << endl; // Único motivo de muerte para posición delantera.
-          cout << "PERDISTE" << endl;
-          exit(0); 
-        }
+          cout << "Alguien fue devorado" << endl;
         else
-        {
           cout << posiciones[posicionDeMuerte]->motivoMuerte() << endl;
-          cout << "PERDISTE" << endl;
-          exit(0);
-        }
+        cout << "PERDISTE" << endl;
+        exit(0);
       } 
-    }  
+    } 
 
     if(posiciones[3]->cuantosPersonajesHay() == cantidad_maxima_jugadores)
     { // Si se quiere cambiar el punto de llegada ganador, coloque posiciones[0].
