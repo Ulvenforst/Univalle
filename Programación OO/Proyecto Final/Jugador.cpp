@@ -2,7 +2,7 @@
   Archivo: Jugador.cpp
   Autor: Juan Camilo Narváez Tascón <juan.narvaez.tascon@correounivalle.edu.co>
   Fecha creación: 2022-08-05
-  Fecha última modificación: 2022-08-08
+  Fecha última modificación: 2022-08-09
   Licencia: GNU-GPL
 */
 
