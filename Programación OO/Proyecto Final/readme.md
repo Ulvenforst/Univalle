@@ -1,4 +1,4 @@
-#La Barca.
+# La Barca.
 
 ## Objetivo:
 Implementar un juego de lógica usando C++ con metodología de programación orientada a objetos.
