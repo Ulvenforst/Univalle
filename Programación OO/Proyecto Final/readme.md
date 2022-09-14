@@ -19,9 +19,7 @@ opción en aforo por defecto de Lugar.cpp, lo mismo aplica para la barca que es 
 <br>
 El siguiente fragmento de código muestra el arreglo de personajes principales, y es ahí donde 
 podemos añadir nuevos personajes, como se ve en los comentarios:<br>
-<div style="text-align:center;">
 ![image](https://user-images.githubusercontent.com/66099723/183515598-2a069daa-70fb-4c10-b358-86326e2423db.png)
-</div>
 <br>
 Una vez añadidos los personajes puede colocarlos en un lugar y asignar las reglas del juego: <br>
 ![image](https://user-images.githubusercontent.com/66099723/183515773-85cf803f-f5e2-4b60-8a0c-c5a1c8f041b2.png)
