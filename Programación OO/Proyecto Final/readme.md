@@ -28,7 +28,7 @@ Todo esto en el main.cpp
 <br><br>
 Los posibles estados de juego son:
 <br>
-![image]([https://user-images.githubusercontent.com/66099723/183516295-2580cedd-7532-43e4-978e-f3f55ae90f75.png](https://user-images.githubusercontent.com/66099723/183516188-3a25ed70-d9ca-4c40-9a22-d26689e99397.png))
+![image](https://user-images.githubusercontent.com/66099723/183516188-3a25ed70-d9ca-4c40-9a22-d26689e99397.png)
 <br>
 ![image](https://user-images.githubusercontent.com/66099723/183516295-2580cedd-7532-43e4-978e-f3f55ae90f75.png)
 <br>
