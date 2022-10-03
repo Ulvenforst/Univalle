@@ -28,7 +28,7 @@ Todo esto en el main.cpp
 <br><br>
 Los posibles estados de juego son:
 <br>
-<div style="text-align=center"> 
+<div style="text-align:center"> 
 d
 </div>
 
