@@ -167,6 +167,7 @@ pub fn radix_sort(array: &mut [i32]) {
     }
 }
 
+/// Orders the given array by the current digit with $\theta(n)$ time complexity.
 fn counting_sort_by_digit(array: &mut [i32], exp: i32) {
     let mut output = vec![0; array.len()]; 
     let mut count = vec![0; 10];
