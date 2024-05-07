@@ -63,6 +63,7 @@ fn partition(array: &mut [i32], low: i32, high: i32) -> i32 {
 }
 
 
+/// Orders the given array with $\theta(n)$ time complexity.
 pub fn counting_sort(array: &mut [i32], max: usize) -> Vec<i32>{
     let mut counting_vector = vec![0; max+1];
     let mut sorted_array = vec![0; array.len()];
