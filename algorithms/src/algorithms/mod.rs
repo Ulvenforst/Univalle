@@ -79,5 +79,14 @@ pub fn counting_sort(array: &mut [i32], max: usize) -> Vec<i32> {
     })
 }
 
+/// Orders the given array with $\theta(n)$ time complexity.
+fn radix_sort(array: &mut [i32]) {
+    // counting_sort may be used as a subroutine.
+    todo!()
+}
 
+/// Orders the given array with $\theta(n)$ time complexity.
+fn bucket_sort(array: &mut [i32]) {
+    todo!()
+}
 

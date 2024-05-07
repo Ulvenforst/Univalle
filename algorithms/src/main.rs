@@ -12,7 +12,9 @@ fn main() {
     // quick_sort(&mut array, 0, high_bound);
     // println!("{:?}",array);
 
-    let max_of_array = *array.iter().max().unwrap() as usize;
-    println!("{:?}", counting_sort(&mut array, max_of_array));
+    // let max_of_array = *array.iter().max().unwrap() as usize;
+    // println!("{:?}", counting_sort(&mut array, max_of_array));
+    
+    radix_sort(&mut array);
 }
 
