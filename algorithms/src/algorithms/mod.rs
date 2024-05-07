@@ -102,9 +102,45 @@ fn partition(array: &mut [i32], low: i32, high: i32) -> i32 {
 }
 
 /// Orders the given array with $\theta(n\lg{n}))$ time complexity.
-fn heap_sort(array: &mut [i32]) {
-    todo!()
+pub fn heap_sort(array: &mut [i32]) {
+    let len = array.len();
+    // Construct max heap
+    for start in (0..len / 2).rev() {
+        sift_down(array, start, len - 1);
+    }
+
+    // An element at a time, extract from the heap
+    for end in (1..len).rev() {
+        array.swap(0, end); // Move the root to the end
+        sift_down(array, 0, end - 1); 
+    }
 }
+
+/// Sifts down the element at the given index to its correct position.
+fn sift_down(array: &mut [i32], start: usize, end: usize) {
+    let mut root = start;
+
+    while root * 2 + 1 <= end {
+        let child = root * 2 + 1; // Left child of root
+        let mut swap = root; // Keeps track of child to swap with 
+
+        if array[swap] < array[child] {
+            swap = child;
+        }
+        // If there is a right child and it is greater than what we're prepared to swap with...
+        if child + 1 <= end && array[swap] < array[child + 1] {
+            swap = child + 1;
+        }
+        if swap == root {
+            // The root holds the largest element. 
+            return;
+        } else {
+            array.swap(root, swap);
+            root = swap; 
+        }
+    }
+}
+
 
 /// Orders the given array with $\theta(n)$ time complexity.
 pub fn counting_sort(array: &mut [i32], max: usize) -> Vec<i32> {

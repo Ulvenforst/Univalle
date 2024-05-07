@@ -9,7 +9,10 @@ fn main() {
     // println!("{:?}",array);
     // println!("{}", binary_search(&mut array, 2));
 
-    merge_sort(&mut array);
+    // merge_sort(&mut array);
+    // println!("{:?}",array);
+    
+    heap_sort(&mut array);
     println!("{:?}",array);
 
     // quick_sort(&mut array, 0, high_bound);
