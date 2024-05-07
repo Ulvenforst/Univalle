@@ -44,7 +44,7 @@ pub fn quick_sort(array: &mut [i32], low: i32, high: i32){
 
 /// Takes last element of the given array as the pivot and place the lower elements
 /// to the left and grater elements to the right; returns the index of the final
-/// position of the pivot.
+/// position of the pivot. Time complexity is $\theta(n)$.
 fn partition(array: &mut [i32], low: i32, high: i32) -> i32 {
     let pivot = array[high as usize];
     let mut index = low-1;
@@ -62,6 +62,10 @@ fn partition(array: &mut [i32], low: i32, high: i32) -> i32 {
     index
 }
 
+/// Orders the given array with $\theta(n\lg{n}))$ time complexity.
+fn heap_sort(array: &mut [i32]) {
+    todo!()
+}
 
 /// Orders the given array with $\theta(n)$ time complexity.
 pub fn counting_sort(array: &mut [i32], max: usize) -> Vec<i32> {
@@ -74,4 +78,6 @@ pub fn counting_sort(array: &mut [i32], max: usize) -> Vec<i32> {
         sorted
     })
 }
+
+
 
