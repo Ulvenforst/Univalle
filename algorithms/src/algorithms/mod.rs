@@ -68,7 +68,7 @@ pub fn counting_sort(array: &mut [i32], max: usize) -> Vec<i32> {
     let mut counts = vec![0; max + 1];
     array.iter().for_each(|&x| counts[x as usize] += 1);
     counts.iter_mut().fold(0, |acc, x| { *x += acc; *x });
-    array.iter().rev().fold(vec![0; array.len()], |mut sorted, &x| {
+    array.iter().fold(vec![0; array.len()], |mut sorted, &x| {
         counts[x as usize] -= 1;
         sorted[counts[x as usize]] = x;
         sorted
