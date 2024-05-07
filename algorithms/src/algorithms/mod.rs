@@ -158,9 +158,40 @@ pub fn counting_sort(array: &mut [i32], max: usize) -> Vec<i32> {
 }
 
 /// Orders the given array with $\theta(n)$ time complexity.
-fn radix_sort(array: &mut [i32]) {
-    // counting_sort may be used as a subroutine.
-    todo!()
+pub fn radix_sort(array: &mut [i32]) {
+    let max = *array.iter().max().unwrap_or(&0);
+    let mut exp = 1;
+    while max / exp > 0 {
+        counting_sort_by_digit(array, exp);
+        exp *= 10;
+    }
+}
+
+fn counting_sort_by_digit(array: &mut [i32], exp: i32) {
+    let mut output = vec![0; array.len()]; 
+    let mut count = vec![0; 10];
+
+    // Save the count of occurrences in count[]
+    for &value in array.iter() {
+        let index = (value / exp) % 10;
+        count[index as usize] += 1;
+    }
+
+    // Change count[i] so that it contains the actual position of this digit in output[]
+    for i in 1..10 {
+        count[i] += count[i - 1];
+    }
+
+    // Construct the output array
+    for i in (0..array.len()).rev() {
+        let value = array[i];
+        let index = (value / exp) % 10;
+        output[count[index as usize] as usize - 1] = value;
+        count[index as usize] -= 1;
+    }
+
+    // Copies the output array to array[], so that array contains numbers sorted by the current digit
+    array.copy_from_slice(&output);
 }
 
 /// Orders the given array with $\theta(n)$ time complexity.

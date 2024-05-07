@@ -12,11 +12,14 @@ fn main() {
     // merge_sort(&mut array);
     // println!("{:?}",array);
     
-    heap_sort(&mut array);
-    println!("{:?}",array);
+    // heap_sort(&mut array);
+    // println!("{:?}",array);
 
     // quick_sort(&mut array, 0, high_bound);
     // println!("{:?}",array);
+
+    radix_sort(&mut array);
+    println!("{:?}",array);
 
     // let max_of_array = *array.iter().max().unwrap() as usize;
     // println!("{:?}", counting_sort(&mut array, max_of_array));
