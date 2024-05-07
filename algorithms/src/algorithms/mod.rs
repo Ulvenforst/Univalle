@@ -29,8 +29,47 @@ pub fn binary_search(array: &mut [i32], num: i32) -> u32 {
 }
 
 /// Orders the given array with $\theta(n\lg{n}))$ time complexity.
-fn merge_sort(array: &mut [i32]) -> i32{
-    todo!()
+pub fn merge_sort(array: &mut [i32]) {
+    if array.len() > 1 {
+        let mid = array.len() / 2;
+        merge_sort(&mut array[..mid]);
+        merge_sort(&mut array[mid..]);
+
+        merge(array, mid);
+    }
+}
+
+/// Merges two sorted arrays into one sorted array.
+fn merge(array: &mut [i32], mid: usize) {
+    let mut temp = array.to_vec();
+    let (left, right) = temp.split_at(mid);
+    let mut left_iter = left.iter();
+    let mut right_iter = right.iter();
+
+    let mut left_next = left_iter.next();
+    let mut right_next = right_iter.next();
+
+    for item in array.iter_mut() {
+        match (left_next, right_next) {
+            (Some(&left_val), Some(&right_val)) if left_val <= right_val => {
+                *item = left_val;
+                left_next = left_iter.next();
+            },
+            (Some(&left_val), Some(&right_val)) => {
+                *item = right_val;
+                right_next = right_iter.next();
+            },
+            (Some(&left_val), None) => {
+                *item = left_val;
+                left_next = left_iter.next();
+            },
+            (None, Some(&right_val)) => {
+                *item = right_val;
+                right_next = right_iter.next();
+            },
+            (None, None) => break,
+        }
+    }
 }
 
 /// Orders the given array, promedy time complexity is $\theta(n\lg{n}))$

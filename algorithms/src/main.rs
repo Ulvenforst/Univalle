@@ -9,13 +9,16 @@ fn main() {
     // println!("{:?}",array);
     // println!("{}", binary_search(&mut array, 2));
 
+    merge_sort(&mut array);
+    println!("{:?}",array);
+
     // quick_sort(&mut array, 0, high_bound);
     // println!("{:?}",array);
 
     // let max_of_array = *array.iter().max().unwrap() as usize;
     // println!("{:?}", counting_sort(&mut array, max_of_array));
     
-    bucket_sort(&mut array);
-    println!("{:?}", array);
+    // bucket_sort(&mut array);
+    // println!("{:?}", array);
 }
 
