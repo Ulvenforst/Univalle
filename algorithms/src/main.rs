@@ -15,6 +15,7 @@ fn main() {
     // let max_of_array = *array.iter().max().unwrap() as usize;
     // println!("{:?}", counting_sort(&mut array, max_of_array));
     
-    radix_sort(&mut array);
+    bucket_sort(&mut array);
+    println!("{:?}", array);
 }
 

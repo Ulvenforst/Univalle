@@ -70,8 +70,11 @@ fn heap_sort(array: &mut [i32]) {
 /// Orders the given array with $\theta(n)$ time complexity.
 pub fn counting_sort(array: &mut [i32], max: usize) -> Vec<i32> {
     let mut counts = vec![0; max + 1];
+    // Count the number of times each element appears in the array
     array.iter().for_each(|&x| counts[x as usize] += 1);
+    // Calculate the number of elements less than or equal to each element
     counts.iter_mut().fold(0, |acc, x| { *x += acc; *x });
+    // Sort the array based on the counts
     array.iter().fold(vec![0; array.len()], |mut sorted, &x| {
         counts[x as usize] -= 1;
         sorted[counts[x as usize]] = x;
@@ -86,7 +89,29 @@ fn radix_sort(array: &mut [i32]) {
 }
 
 /// Orders the given array with $\theta(n)$ time complexity.
-fn bucket_sort(array: &mut [i32]) {
-    todo!()
+pub fn bucket_sort(array: &mut [i32]) {
+    if array.is_empty() { return }
+    
+    let min = *array.iter().min().unwrap();
+    let max = *array.iter().max().unwrap();
+    let bucket_size = (max - min) / array.len() as i32 + 1;
+    let bucket_count = ((max - min) / bucket_size + 1) as usize;
+    let mut buckets: Vec<Vec<i32>> = vec![vec![]; bucket_count];
+    
+    // Push each element into its corresponding bucket
+    array.iter().for_each(|&item| {
+        let index = ((item - min) / bucket_size) as usize;
+        buckets[index].push(item);
+    });
+    
+    // Orders each bucket and reconstructs the original array
+    let mut idx = 0;
+    buckets.iter_mut().for_each(|bucket| {
+        insertion_sort(bucket);
+        bucket.iter().for_each(|&item| {
+            array[idx] = item;
+            idx += 1;
+        });
+    });
 }
 
